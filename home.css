@@ -1,0 +1,275 @@
+@font-face {
+    font-family: 'Heebo-Medium';
+    src: url('fonts/Heebo-Medium.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Heebo-Regular';
+    src: url('fonts/Heebo-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: Heebo-Regular, "sans-serif";
+
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    /* margin: auto;*/
+
+
+    /* max-width: 1152px; */
+    /* margin: 0px auto; */
+    /* padding: 0px; */
+}
+
+
+
+header {
+    padding: 27px 60px;
+
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;
+
+
+    gap: 33px;
+    justify-content: end;
+    list-style: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+
+    width: 71px;
+    height: 43px;
+
+    font-family: Heebo-Medium;
+    color: #000;
+    font-size: 20px;
+}
+
+.menu ul li a:hover {
+    color: #FF6464;
+}
+
+
+
+
+
+
+
+.block1 {
+    padding: 71px 148px;
+    margin-bottom: 71px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    align-items: start;
+    gap: 91px;
+    color: #21243D;
+}
+
+.block1 .left {
+    max-width: 497px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block1 .left h1 {
+    font-size: 44px;
+    font-family: Heebo-Medium;
+}
+
+.block1 .left p {
+
+    font-size: 16px;
+}
+
+
+.download {
+    width: 208px;
+    height: 47px;
+    /* padding: 10px 20px; */
+    background-color: #FF6464;
+    color: #fff;
+    border: none;
+}
+
+
+
+
+
+.block1 .right {
+    width: 243px;
+    height: 243px;
+    min-width: 243px;
+    min-height: 243px;
+
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: cover;
+    border: 10px solid #EDF7FA;
+    border-top: 0px;
+    border-left: 0px;
+}
+
+.block1 .right img {
+    position: absolute;
+    top: -60px;
+
+    width: 243px;
+}
+
+
+
+
+
+.block2 {
+    /* width: 100vw; */
+    padding: 71px 148px;
+    background-color: #EDF7FA;
+
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.block2 .text {
+    align-items: center;
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+
+
+.block2 .text p {
+    color: #00A8CC;
+    font-size: 16px;
+}
+
+
+
+.container {
+
+    color: #21243D;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.container .item {
+    padding: 20px;
+    width: 370px;
+    height: 295px;
+    background-color: #fff;
+
+    border-radius: 4px;
+}
+
+.container .item h3 {
+    font-size: 26px;
+}
+
+.container .item .date {
+    
+    font-size: 18px;
+}
+
+.container .item p {
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.block3 {
+    padding: 71px 148px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.block3 h3 {
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.block3 .item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:30px 0px ;
+}
+
+
+
+.block3 .item img {
+    margin-right: 16px;
+    width: 246px;
+    height: 180px;
+    border-radius: 6px;
+}
+
+
+.block3 .item .right h2 {
+    margin: 0px;
+    font-size: 30px;
+}
+
+.block3 .item .right div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    align-items: center;
+
+}
+
+.block3 .item .right div p {
+    padding: 5px 15px;
+    border-radius: 16px;
+    background: #142850;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    margin-right: 16px;
+
+}
+
+.block3 .item .right div .name {
+    background: none;
+    color: #8695A4;
+    font-size: 20px;
+}
+
+.block3 .item .right .about {
+    font-size: 16px;
+    max-width: 594px;
+    margin: 0%;
+
+}
