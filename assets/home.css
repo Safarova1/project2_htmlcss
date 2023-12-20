@@ -41,11 +41,9 @@ header .menu ul {
     font-size: 20px;
 }
 
-.menu ul li a:hover,
-.menu ul li a:active {
+.menu ul li a:hover{
     color: #FF6464;
 }
-
 
 
 .menuline {

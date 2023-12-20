@@ -16,6 +16,7 @@ body {
 }
 
 * {
+    margin: 0px;
     font-family: 'Heebo-Regular';
 }
 
@@ -48,6 +49,7 @@ header .menu ul {
 .menu ul li .active {
     color: #FF6464;
 }
+
 .menuline {
     display: none;
 }
@@ -77,55 +79,33 @@ main {
 
 .container .item {
     width: 100%;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.left {
-    width: 35%;
-    padding-right: 20px;
-}
-
-
-.left img {
-    width: 100%;
-    border-radius: 6px;
-
 }
 
 
 
 
-.right {
-    width: 60%;
-}
-
-.right h2 {
+.item h2 {
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
-.right p {
+.item p {
     font-size: 16px;
-
+    margin: 15px 0px;
 }
 
 
+.item span {
+    padding-right: 26px;
+    font-weight: 400;
+}
 
-.right p .year {
-    font-size: 18px;
-    margin-right: 26px;
-    background-color: #142850;
-    color: #FFFFFF;
-    padding: 3px 10px;
-    border-radius: 16px;
-
+.item p .year {
+    font-size: 20px;
 }
 
 
-.right p .name {
+.item p .name {
     font-size: 20px;
     color: #8695A4;
 }
@@ -133,15 +113,12 @@ main {
 
 
 .line {
-    margin: 47px 0px;
+    margin: 29px 0px;
     width: 100%;
 }
 
 
 
-.container .five {
-    display: none;
-}
 
 
 
@@ -163,6 +140,7 @@ footer .icons svg {
 }
 
 footer p {
+    padding: 26px 0px;
     color: #21243D;
     font-size: 14px;
 }
@@ -220,15 +198,6 @@ footer p {
     }
 
 
-    .container .two,
-    .container .three,
-    .container .four {
-        display: none;
-    }
-
-    .container .five {
-        display: flex;
-    }
 
 
 
