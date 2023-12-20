@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'Heebo-Medium';
+    src: url('fonts/Heebo-Medium.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Heebo-Regular';
+    src: url('fonts/Heebo-Regular.ttf') format('truetype');
+}
+
+body {
+    color: #21243D;
+    max-width: 1152px;
+    margin: auto;
+}
+
+* {
+    font-family: 'Heebo-Regular';
+}
+
+
+/* header */
+header {
+    padding: 27px 60px;
+}
+
+header .menu ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 33px;
+    justify-content: end;
+    list-style: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-family: Heebo-Medium;
+    color: #000;
+    font-size: 20px;
+}
+
+.menu ul li a:hover,
+.menu ul li a:active {
+    color: #FF6464;
+}
+
+
+
+.menuline {
+    display: none;
+}
+
+
+
+
+
+
+
+/* main */
+
+main {
+    margin: auto;
+    padding: 10px;
+    max-width: 682px;
+}
+
+
+
+/* container */
+.title {
+    font-size: 44px;
+}
+
+
+
+.container .item {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.left {
+    width: 35%;
+    padding-right: 20px;
+}
+
+
+.left img {
+    width: 100%;
+
+}
+
+
+
+
+.right {
+    width: 60%;
+}
+
+.right h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.right p {
+    font-size: 16px;
+
+}
+
+.right p .year {
+    font-size: 18px;
+    margin-right: 26px;
+    background-color: #142850;
+    color: #FFFFFF;
+    padding: 3px 10px;
+    border-radius: 16px;
+
+}
+
+
+.right p .name {
+    font-size: 20px;
+    color: #8695A4;
+}
+
+
+
+svg {
+    width: 100%;
+}
+
+
+
+
+
+
+@media (max-width: 800px) {
+    
+
+    /* header nav */
+    .menu {
+        display: none;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    .menuline {
+        display: flex;
+        justify-content: end;
+    }
+}

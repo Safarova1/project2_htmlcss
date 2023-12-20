@@ -10,12 +10,14 @@
 }
 
 body {
-    font-family: Heebo-Regular, "sans-serif";
+    
     max-width: 1152px;
     margin: auto;
 }
 
-
+*{
+    font-family: 'Heebo-Regular';
+}
 
 
 /* header */
