@@ -11,31 +11,22 @@
 
 body {
     font-family: Heebo-Regular, "sans-serif";
-
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: center;
-    /* margin: auto;*/
-
-
-    /* max-width: 1152px; */
-    /* margin: 0px auto; */
-    /* padding: 0px; */
+    max-width: 1152px;
+    margin: auto;
 }
 
 
 
+
+/* header */
 header {
     padding: 27px 60px;
-
 }
 
 header .menu ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
-
     gap: 33px;
     justify-content: end;
     list-style: none;
@@ -43,39 +34,45 @@ header .menu ul {
 
 .menu ul li a {
     text-decoration: none;
-
-    width: 71px;
-    height: 43px;
-
     font-family: Heebo-Medium;
     color: #000;
     font-size: 20px;
 }
 
-.menu ul li a:hover {
+.menu ul li a:hover,
+.menu ul li a:active {
     color: #FF6464;
 }
 
 
 
+.menuline {
+    display: none;
+}
 
 
 
+/* main */
 
+
+
+/* section block1 */
 .block1 {
+    width: auto;
     padding: 71px 148px;
     margin-bottom: 71px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
     align-items: start;
-    gap: 91px;
     color: #21243D;
+    flex-direction: row;
 }
 
 .block1 .left {
-    max-width: 497px;
+
+    width: 60%;
+
     display: flex;
     flex-wrap: wrap;
 }
@@ -86,15 +83,12 @@ header .menu ul {
 }
 
 .block1 .left p {
-
     font-size: 16px;
 }
-
 
 .download {
     width: 208px;
     height: 47px;
-    /* padding: 10px 20px; */
     background-color: #FF6464;
     color: #fff;
     border: none;
@@ -105,40 +99,48 @@ header .menu ul {
 
 
 .block1 .right {
-    width: 243px;
-    height: 243px;
-    min-width: 243px;
-    min-height: 243px;
 
+    width: 40%;
     position: relative;
-    border-radius: 50%;
-    overflow: hidden;
-    background-size: cover;
-    border: 10px solid #EDF7FA;
-    border-top: 0px;
-    border-left: 0px;
+    display: flex;
+
+    justify-content: center;
+
 }
 
 .block1 .right img {
     position: absolute;
-    top: -60px;
 
-    width: 243px;
+}
+
+
+
+.block1 .right .ellipse {
+    position: relative;
+    left: 10px;
+    top: 10px;
 }
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+/* section block2 */
 .block2 {
-    /* width: 100vw; */
     padding: 71px 148px;
     background-color: #EDF7FA;
-
-
     display: flex;
     flex-direction: column;
-
 }
 
 .block2 .text {
@@ -150,33 +152,27 @@ header .menu ul {
     justify-content: space-between;
 }
 
-
-
-
-
 .block2 .text p {
     color: #00A8CC;
     font-size: 16px;
 }
 
 
-
 .container {
-
     color: #21243D;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;
+
 }
 
 .container .item {
     padding: 20px;
-    width: 370px;
-    height: 295px;
+    width: 40%;
+    min-width: 370px;
     background-color: #fff;
-
     border-radius: 4px;
 }
 
@@ -185,7 +181,6 @@ header .menu ul {
 }
 
 .container .item .date {
-
     font-size: 18px;
 }
 
@@ -202,23 +197,22 @@ header .menu ul {
 
 
 
-
+/* section block3 */
 .block3 {
     padding: 71px 148px;
     display: flex;
     flex-direction: column;
-
     gap: 10px;
+    color: #21243D;
 }
 
 
-.block3 h3 {
+.block3 h1 {
     font-size: 22px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
-
 
 .block3 .item {
     display: flex;
@@ -227,15 +221,12 @@ header .menu ul {
     margin: 30px 0px;
 }
 
-
-
 .block3 .item img {
     margin-right: 16px;
     width: 246px;
     height: 180px;
     border-radius: 6px;
 }
-
 
 .block3 .item .right h2 {
     margin: 0px;
@@ -246,9 +237,7 @@ header .menu ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
     align-items: center;
-
 }
 
 .block3 .item .right div p {
@@ -259,7 +248,6 @@ header .menu ul {
     font-size: 18px;
     text-align: center;
     margin-right: 16px;
-
 }
 
 .block3 .item .right div .name {
@@ -272,7 +260,11 @@ header .menu ul {
     font-size: 16px;
     max-width: 594px;
     margin: 0%;
+}
 
+.block3 svg {
+    width: 100%;
+    background-color: #E0E0E0;
 }
 
 
@@ -280,8 +272,7 @@ header .menu ul {
 
 
 
-
-
+/* footer */
 footer {
     display: flex;
     flex-direction: column;
@@ -292,12 +283,13 @@ footer {
 }
 
 footer .icons svg {
+
     padding: 0px 17px;
     fill: #21243D;
 }
 
 footer p {
-    color: var(--Dark, #21243D);
+    color: #21243D;
     font-size: 14px;
 }
 
@@ -305,16 +297,231 @@ footer p {
 
 
 
-@media (max-width: 1023px ){
-    header .menu ul a{
-        /* <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="0 0 30 20" fill="none">
-        <path d="M0 1H30" stroke="#21243D" stroke-width="1.6"/>
-        <path d="M0 10H30" stroke="#21243D" stroke-width="1.6"/>
-        <path d="M0 19H30" stroke="#21243D" stroke-width="1.6"/>
-      </svg> */
+@media (max-width: 800px) {
+    * {
+        margin: 0px;
+        padding: 0px;
     }
+
+    /* header nav */
+    .menu {
+        display: none;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    .menuline {
+        display: flex;
+        justify-content: end;
+    }
+
+
+
+    /* main*/
+
+    /* section block1  */
+    .block1 {
+        padding: 23px;
+        padding-bottom: 58px;
+        margin: auto;
+        gap: 0px;
+        flex-direction: column-reverse;
+    }
+
+    .block1 .right {
+        margin: auto;
+    }
+
+    .block1 .right img {
+        width: 171px;
+    }
+
+
+   .block1 .right .ellipse {
+       left: -10px;
+       
+   }
+
+    .block1 .left {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .block1 .left h1 {
+        font-size: 32px;
+    }
+
+    .block1 .left p {
+        font-size: 16px;
+        padding-bottom: 27px;
+    }
+
+  
+
+
+    .download {
+        margin: auto;
+    }
+
+
+
+
+
+
+    /* section block2  */
+
+    .block2 {
+        padding: 10px;
+        padding-bottom: 38px;
+    }
+
+    .block2 .text {
+        justify-content: center;
+        color: #21243D;
+    }
+
+    h2 {
+        font-size: 18px;
+        font-family: Heebo-Regular;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 60px;
+    }
+
+    .block2 .text p {
+        display: none;
+    }
+
+
+    .container {
+        gap: 17px;
+        justify-content: center;
+    }
+
+    .container .item {
+        width: 100%;
+    }
+
+    .container .item h3 {
+        font-size: 22px;
+        padding-bottom: 12px;
+    }
+
+    .container .item .date {
+        font-size: 16px;
+        padding-bottom: 19px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .block3 {
+        padding: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    .block3 h1 {
+        text-align: center;
+        font-family: Heebo-Regular;
+        font-size: 18px;
+        font-weight: 400;
+
+    }
+
+    .block3 .item {
+        margin: 0px;
+    }
+
+    .block3 .item img {
+        width: 100%;
+        height: auto;
+        margin: 0px;
+    }
+
+    .block3 .item .right h2 {
+        margin: 0px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .block3 .item .right div {
+        padding-bottom: 24px;
+    }
+
+    .block3 .item .right div p {
+        font-size: 16px;
+        font-weight: 900;
+    }
+
+    .block3 .item .right div .name {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .block3 svg {
+        width: 100%;
+        background-color: #E0E0E0;
+    }
+
+    .block3 .telitem2 {
+        display: none;
+    }
+
+    .block3 .telitem3 {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* footer */
+
+    footer {
+        padding-top: 150px;
+    }
+
+
+    footer p {
+        padding-top: 26px;
+
+    }
+
+
+
+
+
+
 }
-
-
-
-
